@@ -1,0 +1,205 @@
+:root {
+  --accent-color: #dd2242;
+  --description-color: #e0e0e0;
+  --background-color: #010a20;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  color: #ffffff;
+  background-color: black;
+}
+
+.container {
+  width: 1578px;
+  margin: 0 auto;
+  padding: 0 15px;
+  border: 1px solid red;
+}
+
+.hero-title,
+.logo-link {
+  font-weight: 900;
+}
+
+.logo-link,
+.hero-title,
+.empty-number {
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-item,
+.hero-title,
+.logo-link {
+  text-transform: uppercase;
+}
+
+.start-travel .nav-item,
+.empty-title,
+.article-title,
+.explore-title,
+.numbers-title,
+.number-title,
+.map-title,
+.gallery-title,
+.getting-title,
+.menu-item {
+  font-weight: 700;
+}
+
+.start-travel {
+  font-size: 20px;
+}
+
+.nav-item,
+.empty-text,
+.article-description,
+.numbers-description,
+.preview-title {
+  font-size: 18px;
+}
+
+.hero-title {
+  font-size: 120px;
+  line-height: 1.08;
+  width: 627px;
+}
+
+.empty-number {
+  color: var(--accent-color);
+  font-weight: 900;
+}
+
+.empty-text {
+  width: 200px;
+  color: #939393;
+}
+
+.empty-title {
+  font-size: 26.41px;
+  line-height: 0.643;
+}
+
+.article-title,
+.map-title,
+.video-title {
+  font-size: 42px;
+  line-height: 1.1905;
+}
+
+.map-title {
+  width: 641px;
+  color: #000;
+}
+
+.article-description {
+  width: 400px;
+}
+
+.article-description,
+.numbers-description,
+.number-description,
+.preview-description {
+  color: var(--description-color);
+}
+
+.article-description,
+.numbers-description,
+.number-description,
+.map-description,
+.preview-description,
+.gallery-description,
+.menu-item {
+  font-size: 18px;
+  line-height: 1.5556;
+}
+
+.map-description,
+.gallery-description {
+  color: #6f7787;
+}
+
+.map-description {
+  width: 470px;
+}
+
+.gallery-description {
+  width: 500px;
+}
+
+.numbers-description {
+  width: 460px;
+}
+
+.numbers-description,
+.number-description,
+.menu-item {
+  letter-spacing: 0.5px;
+}
+
+.number-description {
+  width: 340px;
+}
+
+.explore-title {
+  color: var(--background-color);
+  font-size: 50px;
+}
+
+.numbers-title,
+.gallery-title,
+.getting-title {
+  font-size: 60px;
+}
+
+.explore-title,
+.numbers-title,
+.gallery-title,
+.getting-title {
+  line-height: 1.5;
+}
+
+.number-title {
+  color: var(--accent-color);
+  font-size: 42.14px;
+  line-height: 1.1666;
+}
+
+.map,
+.gallery {
+  background-color: white;
+}
+
+.video-title {
+  width: 900px;
+}
+
+.country-desc {
+  width: 330px;
+}
+
+.city-desc {
+  width: 300px;
+}
+
+.gallery-title {
+  color: #000;
+}
+
+.getting {
+  background-color: #dce8f2;
+  color: #000;
+}
+
+.plan-title {
+  color: var(--background-color);
+}
+
+.plan-description,
+.travelling-description {
+  color: rgba(21, 20, 57, 0.4);
+}
+
+footer .logo-link > span {
+  color: var(--accent-color);
+}

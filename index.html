@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explore Indonesia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -32,29 +38,29 @@
           <h1 class="hero-title">Explore Indonesia</h1>
           <button class="start-travel">Start travelling</button>
 
-          <div class="hero-empty">
-            <div class="empty-container">
+          <ul class="empty-list">
+            <li class="empty-item">
               <p class="empty-number">01</p>
               <h5 class="empty-title">Title here</h5>
               <p class="empty-text">
                 Lorem ipsum dolor sit amet et amet ist ame.
               </p>
-            </div>
-            <div class="empty-container">
+            </li>
+            <li class="empty-item">
               <p class="empty-number">02</p>
               <h5 class="empty-title">Title here</h5>
               <p class="empty-text">
                 Lorem ipsum dolor sit amet et amet ist ame.
               </p>
-            </div>
-            <div class="empty-container">
+            </li>
+            <li class="empty-item">
               <p class="empty-number">03</p>
               <h5 class="empty-title">Title here</h5>
               <p class="empty-text">
                 Lorem ipsum dolor sit amet et amet ist ame.
               </p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="container articles">
@@ -62,26 +68,28 @@
           <div class="article-content">
             <img src="./img/walkways.png" alt="The walkways" />
             <div class="article-text">
-              <h2 class="article-title">The walkways of Indonesia spellbind</h2>
-              <p class="article-description">
+              <h2 class="article-title walkways-title">
+                The walkways of Indonesia spellbind
+              </h2>
+              <p class="article-description walkways-description">
                 Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce
                 commodo magna et libero mollis rhoncus.
               </p>
-              <button class="learn-btn">learn-btn More</button>
+              <button class="learn-btn">Learn More</button>
             </div>
           </div>
         </article>
         <article class="article">
           <div class="article-content">
             <div class="article-text">
-              <h2 class="article-title">
+              <h2 class="article-title beaches-title">
                 Perfect beaches exude relaxation and fun
               </h2>
-              <p class="article-description">
+              <p class="article-description beaches-description">
                 Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce
                 commodo magna et libero mollis rhoncus.
               </p>
-              <button class="learn-btn">learn-btn More</button>
+              <button class="learn-btn">Learn More</button>
             </div>
             <img src="./img/beaches.png" alt="The beaches" />
           </div>
@@ -110,7 +118,7 @@
           <h2 class="numbers-title">By The Numbers</h2>
           <p class="numbers-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            commodo magna et libero.Lorem ipsum dolor sit amet, consectetur
+            commodo magna et libero. Lorem ipsum dolor sit amet, consectetur
             adipiscing elit.
           </p>
           <ul class="numbers-list">
@@ -118,8 +126,7 @@
               <h3 class="number-title">100+</h3>
               <p class="number-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                commodo magna et libero.Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit.
+                commodo magna et libero.
               </p>
             </li>
             <li class="number">
@@ -163,22 +170,21 @@
           <li class="preview">
             <img src="./img/country.png" alt="Country Image" />
             <div class="preview-text">
-              <h5 class="preview-title">In The Country</h5>
-              <p class="preview-description">
+              <h5 class="preview-title country-title">In The Country</h5>
+              <p class="preview-description country-desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Phasellus dapibus mauris in lectus tempus.
               </p>
             </div>
           </li>
           <li class="preview">
+            <img src="./img/city.png" alt="City Image" />
             <div class="preview-text">
-              <div class="preview-text">
-                <h5 class="preview-title">In The City</h5>
-                <p class="preview-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus dapibus mauris in.
-                </p>
-              </div>
+              <h5 class="preview-title city-title">In The City</h5>
+              <p class="preview-description city-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus dapibus mauris in.
+              </p>
             </div>
           </li>
         </ul>
@@ -210,49 +216,67 @@
           </p>
         </div>
         <div class="getting-plan">
-            <h5 class="plan-title second">Choosing your hotel</h5>
-            <p class="plan-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus
-            varius. Sed euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt, viverra neque auctor, lobortis enim.</p>
-            <div class="travelling-content">
-                <img src="" alt="" class="travelling-image">
-                <div class="travelling-text">
-                    <h6 class="travelling-title">Travelling there</h6>
-                    <p class="travelling-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt.</p>
-                </div>
+          <h5 class="plan-title second">Choosing your hotel</h5>
+          <p class="plan-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            dapibus mauris in lectus tempus, eget tincidunt lacus varius. Sed
+            euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt,
+            viverra neque auctor, lobortis enim.
+          </p>
+          <div class="travelling-content">
+            <img src="" alt="" class="travelling-image" />
+            <div class="travelling-text">
+              <h6 class="travelling-title">Travelling there</h6>
+              <p class="travelling-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus dapibus mauris in lectus tempus, eget tincidunt.
+              </p>
             </div>
+          </div>
         </div>
         <div class="getting-plan">
-            <h5 class="plan-title third">Planning your experiences</h5>
-            <p class="plan-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus
-            varius.</p>
+          <h5 class="plan-title third">Planning your experiences</h5>
+          <p class="plan-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            dapibus mauris in lectus tempus, eget tincidunt lacus varius.
+          </p>
         </div>
         <div class="learn-btn">Learn More</div>
       </section>
     </main>
     <footer>
-        <div class="container">
-            <a href="./index.html" class="logo-link">
-                <img src="./img/explore-logo.png" alt="Explore Indonesia Logo" class="logo-img">
-                <span>Explore</span>
-                Indonesia
-            </a>
-            <ul class="footer-list">
-                <ul class="menu-list">
-                    <li class="menu-item">About</li>
-                    <li class="menu-item">Pricing</li>
-                    <li class="menu-item">Company</li>
-                    <li class="menu-item">Blog</li>
-                    </ul>
-                    <ul class="socials-list">
-                        <li class="social-item facebook">
-                            <a href="https://facebook.com" rel="noreferrer noopener" target="_blank"  class="facebook-link"></a>
-                        </li>
-                        <li class="social-item linkedin"></li>
-                        <li class="social-item google"></li>
-                    </ul>
-                    <p class="copyright">Copyright &copy; 2019</p>
-            </ul>
-        </div>
+      <div class="container">
+        <a href="./index.html" class="logo-link">
+          <img
+            src="./img/explore-logo.png"
+            alt="Explore Indonesia Logo"
+            class="logo-img"
+          />
+          <span>Explore</span>
+          Indonesia
+        </a>
+        <ul class="footer-list">
+          <ul class="menu-list">
+            <li class="menu-item">About</li>
+            <li class="menu-item">Pricing</li>
+            <li class="menu-item">Company</li>
+            <li class="menu-item">Blog</li>
+          </ul>
+          <ul class="socials-list">
+            <li class="social-item facebook">
+              <a
+                href="https://facebook.com"
+                rel="noreferrer noopener"
+                target="_blank"
+                class="facebook-link"
+              ></a>
+            </li>
+            <li class="social-item linkedin"></li>
+            <li class="social-item google"></li>
+          </ul>
+          <p class="copyright">Copyright &copy; 2019</p>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
