@@ -55,6 +55,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 196px;
 }
 
 .hero-title,
@@ -124,7 +125,6 @@ body {
   font-size: 120px;
   line-height: 1.08;
   width: 627px;
-  margin-top: 196px;
 }
 
 .empty-number {
@@ -291,11 +291,42 @@ body {
 
 .numbers-content,
 .map-content,
-.video-content,
-.gallery-content {
+.video-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.images-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.girls {
+  grid-row: span 3 / span 3;
+}
+.river {
+  grid-row: span 2 / span 2;
+}
+.traveller {
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+.sea {
+  grid-row: span 3 / span 3;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.mountains {
+  grid-row: span 3 / span 3;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.fog {
+  grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 3;
 }
 
 .numbers-title {
@@ -414,17 +445,6 @@ body {
   margin-bottom: 71px;
 }
 
-.images-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.image {
-  flex-basis: calc((100% - (30px * 2)) / 3);
-}
 
 .getting {
   background-color: #dce8f2;
