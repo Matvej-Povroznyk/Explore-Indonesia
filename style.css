@@ -445,6 +445,15 @@ body {
   margin-bottom: 71px;
 }
 
+.video-preview {
+  width: 1056px;
+  height: 54px;
+}
+
+.travelling-image {
+  width: 249px;
+  height: 166px;
+}
 
 .getting {
   background-color: #dce8f2;
