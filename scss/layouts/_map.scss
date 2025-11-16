@@ -1,0 +1,58 @@
+.map {
+  background-image: url(../img/map-bg_desktop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 249px;
+  padding-bottom: 256px;
+
+  @media screen and (max-width: 767px) {
+    background-image: url(../img/map-bg_mobile.png);
+    padding-top: 171px;
+    padding-bottom: 116px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(50 / 42);
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+
+    margin-bottom: 32px;
+
+    @include size(614px);
+
+    @media screen and (max-width: 767px) {
+      font-size: 40px;
+      line-height: calc(46 / 40);
+      margin-bottom: 36px;
+      @include size(314px);
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    text-align: center;
+    color: rgba(111, 119, 135, 1);
+
+    margin-bottom: 36px;
+
+    @include size(450px);
+
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      line-height: calc(24 / 16);
+      margin-bottom: 41px;
+      @include size(314px);
+    }
+  }
+}

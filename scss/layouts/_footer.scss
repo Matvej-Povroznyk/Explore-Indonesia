@@ -1,0 +1,133 @@
+.footer {
+  position: relative;
+  @media screen and (min-width: 1200px) {
+    transform: translateX(-25%);
+    flex-direction: row;
+  }
+
+  display: flex;
+
+  padding-top: 58px;
+  padding-bottom: 50px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 63px;
+    padding-bottom: 63px;
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__up {
+    position: absolute;
+    right: -300px;
+    top: -50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $accent-color;
+    @include size(104px, 104px);
+    border-radius: 50%;
+
+    @media screen and (max-width: 767px) {
+      font-size: 40px;
+
+      position: absolute;
+      left: 50%;
+      top: -10%;
+
+      transform: translateX(-50%);
+    }
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 24;
+    line-height: 0.9;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      line-height: 0.81;
+    }
+  }
+
+  &__logo > span {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo > span > .text--accent {
+    color: $accent-color;
+  }
+
+  &__lists {
+    @media screen and (min-width: 1200px) {
+      position: relative;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      margin-top: 60px;
+    }
+  }
+
+  &__lists,
+  &__menu-list {
+    display: flex;
+    gap: 38px;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      gap: 36px;
+
+      text-align: center;
+    }
+  }
+
+  &__menu-list {
+    @media screen and (min-width: 1200px) {
+      position: absolute;
+      left: 124px;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      gap: 38px;
+    }
+  }
+
+  &__socials-list {
+    display: flex;
+    gap: 22px;
+
+    @media screen and (min-width: 1200px) {
+      position: absolute;
+      left: 1000px;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-direction: row;
+      gap: 48px;
+
+      justify-content: center;
+    }
+  }
+
+  &__copyright {
+    @media screen and (min-width: 1200px) {
+      @include size(158px);
+      position: absolute;
+      left: 1200px;
+    }
+  }
+}

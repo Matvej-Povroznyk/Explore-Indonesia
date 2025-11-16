@@ -1,0 +1,58 @@
+.header {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 375px) and (max-width: 1199px) {
+    padding-top: 58px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 0.81;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 375px) and (max-width: 1199px) {
+      font-size: 21px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__logo > span {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo-img {
+    margin-right: 5px;
+    @include size(21px, 32px);
+  }
+
+  &__nav {
+    margin-left: 60px;
+
+    @media screen and (min-width: 375px) and (max-width: 1199px) {
+      display: none;
+    }
+  }
+
+  .nav__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  .nav__item {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}

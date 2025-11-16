@@ -1,0 +1,104 @@
+.hero {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.31),
+      rgba(0, 0, 0, 0.29)
+    ),
+    url(../img/hero-bg_desktop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 153px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.31),
+        rgba(0, 0, 0, 0.29)
+      ),
+      url(../img/hero-bg_mobile.png);
+  }
+
+  &__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 120px;
+    line-height: calc(130 / 120);
+    text-transform: uppercase;
+
+    @include size(620px);
+
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 375px) and (max-width: 1199px) {
+      font-size: 58px;
+      line-height: calc(63 / 58);
+      @include size(314px);
+    }
+  }
+
+  &__button {
+    padding: 22px 64px;
+
+    background-color: $accent-color;
+    border-radius: 212px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+
+    @media screen and (min-width: 375px) and (max-width: 767px) {
+      @include size(100%);
+    }
+  }
+
+  &__down-content {
+    margin-top: 241px;
+
+    position: relative;
+  }
+
+  &__empty-list {
+    display: flex;
+    gap: 198px;
+
+    background-color: rgba(0, 0, 0, 0.9);
+
+    padding: 40px;
+
+    @media screen and (min-width: 375px) and (max-width: 1199px) {
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+}
+
+.empty {
+  &__number {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: $accent-color;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(41 / 26);
+  }
+
+  &__text {
+    font-size: 18px;
+
+    line-height: calc(28 / 18);
+    color: rgba(147, 147, 147, 1);
+
+    @media screen and (min-width: 375px) and (max-width: 1199px) {
+      font-size: 16px;
+      line-height: calc(24 / 16);
+    }
+  }
+}

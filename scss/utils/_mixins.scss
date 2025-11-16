@@ -1,0 +1,38 @@
+@mixin max-size($max-width: null, $max-height: null) {
+  $props: (
+    max-width: $max-width,
+    max-height: $max-height,
+  );
+
+  @each $prop, $value in $props {
+    @if $value != null {
+      #{$prop}: $value;
+    }
+  }
+}
+
+@mixin size($width: null, $height: null) {
+  $props: (
+    width: $width,
+    height: $height,
+  );
+
+  @each $prop, $value in $props {
+    @if $value != null {
+      #{$prop}: $value;
+    }
+  }
+}
+
+@mixin min-size($min-width: null, $min-height: null) {
+  $props: (
+    min-width: $min-width,
+    min-height: $min-height,
+  );
+
+  @each $prop, $value in $props {
+    @if $value != null {
+      #{$prop}: $value;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.getting {
+  background-color: rgba(220, 232, 242, 1);
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.5;
+    color: rgba(1, 10, 32, 1);
+
+    margin-bottom: 44px;
+
+    @media screen and (min-width: 375px) and (max-width: 767px) {
+      font-size: 40px;
+      line-height: calc(46 / 40);
+      text-align: center;
+    }
+  }
+
+  &__plans {
+    counter-reset: num;
+
+    display: flex;
+    flex-direction: column;
+    gap: 79px;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 127px;
+    }
+  }
+
+  &__plan {
+    counter-increment: num;
+    position: relative;
+    @media screen and (min-width: 1200px) {
+      padding-left: 45px;
+    }
+  }
+
+  &__plan::before {
+    content: counter(num);
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include size(35px, 35px);
+    background: #e24a4a;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+
+    @media screen and (max-width: 767px) {
+      left: 40%;
+      top: -40%;
+
+      @include size(56px, 56px);
+    }
+  }
+
+  .plan__title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(41 / 26);
+    color: $background-color;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+
+    margin-bottom: 28px;
+  }
+
+  .plan__description {
+    font-size: 23px;
+    line-height: calc(38 / 23);
+    letter-spacing: 0px;
+    color: rgba(21, 20, 57, 0.4);
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+
+  .plan__d-part2--hidden {
+    display: none;
+  }
+
+  .plan__show-more {
+    display: none;
+    color: $accent-color;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  .plan__travelling-content {
+    margin-top: 94px;
+
+    display: flex;
+    gap: 45px;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .travelling__title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(41 / 26);
+    color: $background-color;
+
+    margin-bottom: 12px;
+  }
+
+  .travelling__description {
+    font-size: 23px;
+    line-height: calc(38 / 23);
+    color: rgba(21, 20, 57, 0.4);
+
+    @include size(446px);
+  }
+
+  &__button {
+    margin-left: 45px;
+    margin-top: 17px;
+
+    @media screen and (max-width: 767px) {
+      margin-left: 0;
+    }
+  }
+}
